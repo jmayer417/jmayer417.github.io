@@ -1,0 +1,216 @@
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size: 1em;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+h1 {
+  margin-right: 2%;
+}
+
+h1 a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  font-size: .8em;
+  margin-left: 2%;
+}
+
+
+/* Icon 1 */
+
+#nav-icon1 {
+  display: inline;
+  float: right;
+  width: 1.5em;
+  height: .25em;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 span {
+  display: inline;
+  position: absolute;
+  height: .05em;
+  width: 100%;
+  background: #979797;
+  border-radius: .2em;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+  top: 0;
+}
+
+#nav-icon1 span:nth-child(2) {
+  top: .5em;
+}
+
+#nav-icon1 span:nth-child(3) {
+  top: 1em;
+}
+
+#nav-icon1.open span:nth-child(1) {
+  top: 18px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.backgroundImage {
+  height: 800px;
+  background-image: url(../images/cloudBridge.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+  max-width: 100%;
+}
+
+#nameBox {
+  width: 45%;
+  border: 10px solid #FFFFFF;
+  display: inline-block;
+  margin-top: 15%;
+  margin-left: 27.5%;
+  background-color: #D8D8D8;
+  opacity: .87;
+  box-shadow: 4px 6px 2px #525252;
+}
+
+#nameBox h1 {
+  text-align: center;
+  margin: 10% 1% 3% 1%;
+  color: black;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  font-size: 3.5em;
+}
+
+#nameBox p {
+  text-align: center;
+  margin: 2% 1% 5% 1%;
+  color: black;
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  font-size: 1.6em;
+  font-style: italic;
+}
+
+#whiteGap {
+  background-color: white;
+  height: 40px;
+}
+
+footer {
+  background-color: #656565;
+  height: 80px;
+}
+
+footer ul {
+  margin: 0 0 0 32.5%;
+}
+
+footer ul li {
+  color: black;
+  list-style: none;
+  display: inline-block;
+  float: left;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-top: 2.5%;
+}
+
+.footerLink {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+}
+
+  
+
+
+
+
+
+
+
