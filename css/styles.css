@@ -85,13 +85,13 @@ a {
   max-width: 100%;
 }
 
-.pageTitle {
+.contentSection {
   background-color: #D8D8D8;
   width: 100%;
   padding-bottom: 2%;
 }
 
-.pageTitle>h2 {
+.contentSection>h2 {
   display: inline-block;
   font-size: 3em;
   font-weight: 200;
@@ -99,33 +99,23 @@ a {
   margin: 2% 0 0 2%;
 }
 
-/*#headshotImage {
-  display: block;
-  margin-left: 2%;
-}*/
-
-/*#aboutMeTitle {
-  display: inline-block;
-  font-size: 3em;
-  font-weight: 200;
-  color: white;
-  margin: 2% 0 0 2%;
-}
-*/
-.pageTitle>h3 {
-  font-size: 1.25em;
+.contentSection>h3 {
+  font-size: 1.4em;
   font-weight: 200;
   font-style: italic;
   color: black;
-  margin: 2% 0 0 2%;
+  margin: 3% 15% 1% 15%;
 }
 
-.pageTitle>p {
+.contentSection>p {
   color: black;
-  margin: 2%;
+  line-height: 1.5em;
+  font-size: 1.1em;
+  text-align: justify;
+  padding: 0 15% 0 15%;
 }
 
-.pageTitle>button{
+.contentSection>button{
   display: block;
   margin: 8% 4.25% 0 4.25%;
   width: 18%;
@@ -184,6 +174,16 @@ a {
   line-height: 2em;
 }
 
+#projectAtext {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid black;
+}
+
+.projectAoutline>h3 {
+  text-align: center;
+}
+
 #projectAheader {
   margin-left: 44%;
   color: #25AAD5;
@@ -193,7 +193,7 @@ a {
 
 .siteMapImages {
   width: 100%;
-  padding-bottom: 5%;
+  padding: 0 5% 5% 5%;
 }
 
 #nameBox h1 {
@@ -212,6 +212,11 @@ a {
   font-family: 'Source Sans Pro';
   font-weight: 300;
   font-size: 1.6em;
+  font-style: italic;
+}
+
+#thesisLink {
+  color: blue;
   font-style: italic;
 }
 
@@ -238,6 +243,7 @@ a {
 footer {
   background-color: #656565;
   height: 80px;
+  clear: both;
 }
 
 footer ul {
