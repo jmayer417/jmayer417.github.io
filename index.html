@@ -34,7 +34,6 @@
 
 		<div class="contentSection">
 			<h2>About me</h2>
-			<!-- <img src="images/JaneMayerHeadshot.png" id="headshotImage"> -->
 			<h3>UX Designer &amp Product Manager</h3>
 			<p>
 			With an academic background in neuroscience, cognitive science and philosophy, I'm a pragmatic product designer who sees the design process as a continuous problem-solving game.
@@ -49,15 +48,53 @@
 		<div class="whiteGap" id="myProjectsWhiteSpace"></div>
 
 		<div class="contentSection">
-			<h2>My Work</h2>
+			<h2 id="myWorkheader">My Work</h2>
 
 			<section class="myProjects">
-				<button id="projectA"><a href="./projectA.html">Project A</a></button>
-				<button id="projectB"><a href="invision/index.html">Project B</a></button>
+				<button id="projectA">Project A</button>
+				<button id="projectB">Project B</button>
 				<button id="projectC"><a href="#">Project C</a></button>
 			</section>
 
 		</div>
+
+<!-- ProjectA toggle -->
+
+		<div class="contentSection" id="projectAcontent">
+			<h2 id="projectAheader">Project A</h2>
+
+			<section class="contentSection" id="projectAtext">
+			<p><span class="projectAoutline">Objective</span></br>In preparation for a redesign, conduct an overhaul of a website and identify the site’s top priority UX issues.</p>
+
+			<p><span class="projectAoutline">Challenge</span></br>The website is unfamiliar, complex and outdated (i.e. no one has updated the site’s UI or navigation since its creation in 2007); additionally, the client is only vaguely familiar with their product and the original developer is no longer under their employment. What now?</p>
+
+			<p><span class="projectAoutline">My solution</span></br>While reviewing each page, I simultaneously created a site map. This allowed me streamline my review process, gain an in-depth understanding of the product and create the documentation I would later need to pinpoint usability issues to those unfamiliar with the site’s complexity.</p>
+
+			<p><span class="projectAoutline">Outcome</span></br>These site maps provided me with the ability to concretely identify the site’s top UX concerns: dead-end user flows, broken features, outdated content, and more. Using these site maps in conjunction with Google Analytics, I was able to lead constructive discussions with the client on how to simplify the site through the elimination of broken, unnecessary and underused aspects of the site. To see what we accomplished, scroll down.</p>
+			</section>
+
+			<section class="projectAoutline">
+				<h3>Logged-out Site Map</h3>
+				<img src="images/new_stickk_com_homepage_functions(2).jpg" class="siteMapImages">
+				<h3>Logged-in Site Map</h3>
+				<img src="images/new_stickK_loggedin_Profile_User_Flow(copy).jpg" class="siteMapImages">
+			</section>
+
+		</div>
+
+
+<!-- ProjectB toggle -->
+
+		<div class="contentSection" id="projectBcontent">
+			<h2 id="projectBheader">Project B</h2>
+			<section>
+				<iframe width="438" height="930" src="invision/index.html" frameborder="0"></iframe>	
+			</section>
+			
+		</div>
+
+
+
 
 		<div class="whiteGap"></div>
 
@@ -75,5 +112,7 @@
 			</ul>
 		</footer>
 
+		<script src="js/jquery-2.1.4.js"></script>
+    	<script src="js/index.js"></script>
 	</body>
 </html>
